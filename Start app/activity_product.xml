@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".product">
+    android:background="#EBEBEB"
+    tools:context=".producxt">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +24,8 @@
             <ImageView
                 android:id="@+id/image1"
                 android:layout_width="140dp"
-                android:layout_height="140dp" />
+                android:layout_height="140dp"
+                android:src="@drawable/iphone11"/>
 
             <TableRow
                 android:layout_width="match_parent"
@@ -36,9 +38,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
                     android:gravity="center_vertical"
-                    android:text="Belum ada nama "
-                    android:textColor="#FFFFFF" />
+                    android:text="Iphone 11 Pro Max"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
 
                 <Button
@@ -55,7 +59,7 @@
                     android:layout_weight="3"
                     android:gravity="center"
                     android:text="0"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="@color/black" />
 
                 <Button
                     android:id="@+id/btnAdd1"
@@ -70,7 +74,8 @@
             <ImageView
                 android:id="@+id/image2"
                 android:layout_width="140dp"
-                android:layout_height="140dp" />
+                android:layout_height="140dp"
+                android:src="@drawable/samsung"/>
 
             <TableRow
                 android:layout_width="match_parent"
@@ -84,9 +89,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
                     android:gravity="center_vertical"
-                    android:text="Belum ada nama "
-                    android:textColor="#FFFFFF" />
+                    android:text="Samsung Galaxy S20 Ultra"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
 
                 <Button
@@ -103,7 +110,7 @@
                     android:layout_weight="3"
                     android:gravity="center"
                     android:text="0"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="@color/black" />
 
                 <Button
                     android:id="@+id/btnAdd2"
@@ -118,7 +125,7 @@
                 android:id="@+id/image3"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
-
+                android:src="@drawable/xiaomi"
                 />
 
             <TableRow
@@ -133,9 +140,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
                     android:gravity="center_vertical"
-                    android:text="Belum ada nama "
-                    android:textColor="#FFFFFF" />
+                    android:text="Xiaomi Redmi Note 8"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
 
                 <Button
@@ -152,7 +161,7 @@
                     android:layout_weight="3"
                     android:gravity="center"
                     android:text="0"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="@color/black" />
 
                 <Button
                     android:id="@+id/btnAdd3"
@@ -167,7 +176,7 @@
                 android:id="@+id/image4"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
-
+                android:src="@drawable/oppo"
                 />
 
             <TableRow
@@ -179,9 +188,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:fontFamily="@font/alegreya_sans_sc_bold"
                     android:gravity="center_vertical"
-                    android:text="Belum ada nama "
-                    android:textColor="#FFFFFF" />
+                    android:text="Oppo A91"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/btnMinus4"
@@ -197,7 +208,7 @@
                     android:layout_weight="3"
                     android:gravity="center"
                     android:text="0"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="@color/black" />
 
                 <Button
                     android:id="@+id/btnAdd4"
