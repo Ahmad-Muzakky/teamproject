@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradientlog"
     tools:context=".register">
 
     <Button
@@ -23,6 +24,7 @@
         android:layout_marginStart="85dp"
         android:layout_marginTop="128dp"
         android:ems="10"
+        android:fontFamily="@font/alef_bold"
         android:inputType="textPersonName"
         android:text="Username"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +37,7 @@
         android:layout_marginStart="85dp"
         android:layout_marginTop="22dp"
         android:ems="10"
+        android:fontFamily="@font/alef_bold"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -46,6 +49,7 @@
         android:layout_marginStart="85dp"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:fontFamily="@font/alef_bold"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -56,6 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
         android:layout_marginTop="52dp"
+        android:fontFamily="@font/alef_bold"
         android:text="Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userreg" />
@@ -66,16 +71,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
         android:layout_marginTop="44dp"
+        android:fontFamily="@font/alef_bold"
         android:text="Confirm Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passreg" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="46dp"
+        android:layout_height="17dp"
         android:layout_marginStart="168dp"
         android:layout_marginTop="46dp"
+        android:fontFamily="@font/alef_bold"
         android:text="Register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
