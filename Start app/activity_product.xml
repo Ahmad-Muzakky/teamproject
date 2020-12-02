@@ -4,230 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EBEBEB"
-    tools:context=".producxt">
+    tools:context=".list">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="71dp">
+    <Button
+        android:id="@+id/orderbtn"
+        android:layout_width="363dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="671dp"
+        android:layout_marginEnd="148dp"
+        android:layout_weight="3"
+        android:text="My Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="406dp"
+        android:layout_height="584dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-
-            <ImageView
-                android:id="@+id/image1"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:src="@drawable/iphone11"/>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-
-                <TextView
-
-                    android:id="@+id/tvItem1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/alegreya_sans_sc_bold"
-                    android:gravity="center_vertical"
-                    android:text="Iphone 11 Pro Max"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-
-                <Button
-                    android:id="@+id/btnMinus1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="-" />
-
-                <TextView
-                    android:id="@+id/tvJumlah1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:text="0"
-                    android:textColor="@color/black" />
-
-                <Button
-                    android:id="@+id/btnAdd1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="+" />
-
-            </TableRow>
-
-
-            <ImageView
-                android:id="@+id/image2"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:src="@drawable/samsung"/>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-
-                >
-
-                <TextView
-                    android:id="@+id/tvItem2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/alegreya_sans_sc_bold"
-                    android:gravity="center_vertical"
-                    android:text="Samsung Galaxy S20 Ultra"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-
-                <Button
-                    android:id="@+id/btnMinus2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="-" />
-
-                <TextView
-                    android:id="@+id/tvJumlah2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:text="0"
-                    android:textColor="@color/black" />
-
-                <Button
-                    android:id="@+id/btnAdd2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="+" />
-
-            </TableRow>
-
-            <ImageView
-                android:id="@+id/image3"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:src="@drawable/xiaomi"
-                />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-
-                >
-
-                <TextView
-                    android:id="@+id/tvItem3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/alegreya_sans_sc_bold"
-                    android:gravity="center_vertical"
-                    android:text="Xiaomi Redmi Note 8"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-
-                <Button
-                    android:id="@+id/btnMinus3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="-" />
-
-                <TextView
-                    android:id="@+id/tvJumlah3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:text="0"
-                    android:textColor="@color/black" />
-
-                <Button
-                    android:id="@+id/btnAdd3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="+" />
-
-            </TableRow>
-
-            <ImageView
-                android:id="@+id/image4"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:src="@drawable/oppo"
-                />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <TextView
-                    android:id="@+id/tvItem4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/alegreya_sans_sc_bold"
-                    android:gravity="center_vertical"
-                    android:text="Oppo A91"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <Button
-                    android:id="@+id/btnMinus4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="-" />
-
-                <TextView
-                    android:id="@+id/tvJumlah4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:text="0"
-                    android:textColor="@color/black" />
-
-                <Button
-                    android:id="@+id/btnAdd4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:text="+" />
-
-            </TableRow>
-
-            <Button
-                android:id="@+id/btnPesanan"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:text="My Order" />
-
-
-        </LinearLayout>
-
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
