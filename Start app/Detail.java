@@ -44,7 +44,7 @@ public class Detail extends AppCompatActivity {
         textView1.setText(name);
         textView2.setText("Rp." + price);
 
-        order = (Button) findViewById(R.id.order_More);
+        order = (Button) findViewById(R.id.cart);
         order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,12 +64,22 @@ public class Detail extends AppCompatActivity {
                 }
             }
         });
-
+        Button ordermore = (Button) findViewById(R.id.order_More2);
+        ordermore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ordermore();
+            }
+        });
 
     }
 
     private void openorder() {
         Intent intent = new Intent(this,order.class);
+        startActivity(intent);
+    }
+    private void ordermore() {
+        Intent intent = new Intent(this,product.class);
         startActivity(intent);
     }
 }
