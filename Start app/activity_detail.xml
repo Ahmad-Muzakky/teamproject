@@ -51,7 +51,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/order_More"
+        android:id="@+id/cart"
         android:layout_width="285dp"
         android:layout_height="49dp"
         android:layout_marginStart="60dp"
@@ -70,5 +70,17 @@
         android:layout_marginEnd="38dp"
         android:text="My Order"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/order_More2"
+        android:layout_width="285dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="476dp"
+        android:backgroundTint="@color/purple_500"
+        android:gravity="center"
+        android:text="Order more"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
