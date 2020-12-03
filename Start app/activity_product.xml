@@ -8,16 +8,13 @@
 
     <Button
         android:id="@+id/orderbtn"
-        android:layout_width="363dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="671dp"
-        android:layout_marginEnd="148dp"
+        android:layout_width="151dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_weight="3"
         android:text="My Order"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
