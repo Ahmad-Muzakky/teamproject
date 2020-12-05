@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.viewpagerindicator.CirclePageIndicator;
 
 import java.util.Timer;
@@ -41,21 +43,39 @@ public class home extends AppCompatActivity {
     private static int NUM_PAGES = 0;
     private static final Integer[] IMAGES= {R.drawable.ip,R.drawable.sm,R.drawable.hp};
     private ArrayList<Integer> ImagesArray = new ArrayList<Integer>();
-    model shared = new model();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         initSlider();
         ButterKnife.bind(this);
-
         Button product = (Button) findViewById(R.id.homeproduct);
         Button lokasi = (Button) findViewById(R.id.homemylocation);
         Button order = (Button) findViewById(R.id.homemyorder);
         Button about = (Button) findViewById(R.id.homeabout);
         Button log = (Button) findViewById(R.id.logout);
 
-        addproduct();
+        BottomNavigationView navbar = findViewById(R.id.bottom_navigation);
+        navbar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.home:
+                        return true;
+                    case R.id.product:
+                        startActivity(new Intent(getApplicationContext(),product.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.chart:
+                        startActivity(new Intent(getApplicationContext(),order.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
+
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -140,25 +160,6 @@ public class home extends AppCompatActivity {
 
             }
         });
-    }
-    public void addproduct(){
-        if (shared.getFlag() == null || shared.getFlag() == 1) {
-            shared.setItem1("Iphone");
-            shared.setHarga1(5000000);
-            shared.setJumlah1(0);
-
-            shared.setItem2("Samsung");
-            shared.setHarga2(4000000);
-            shared.setJumlah2(0);
-
-            shared.setItem3("Xiaomi");
-            shared.setHarga3(3000000);
-            shared.setJumlah3(0);
-
-            shared.setItem4("Oppo");
-            shared.setHarga4(20000000);
-            shared.setJumlah4(0);
-        }
     }
     public void nextpage(){
         Intent intent = new Intent(this,login.class);
