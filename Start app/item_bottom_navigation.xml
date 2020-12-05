@@ -9,8 +9,6 @@
     <item android:title="Chart"
         android:id="@+id/chart"
         android:icon="@drawable/ic_shopping_cart"/>
-<!--    <item android:title="User"-->
-<!--        android:id="@+id/user"-->
-<!--        android:icon="@drawable/ic_user"/>-->
+
 
 </menu>
