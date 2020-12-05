@@ -9,3 +9,5 @@ Ari Fajar Muharam - 2201838462
 Habbib Ramadhani Wasesa - 2201837150
 Rizky Ramadhan - 2201838241
 Madeleina Sofia Ayuningtyas - 2201838430
+
+![](printscreen/1.jpg)
