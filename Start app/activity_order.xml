@@ -9,10 +9,13 @@
     tools:context=".order">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="405dp"
+        android:layout_height="539dp"
         android:backgroundTint="@color/teal_200"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView5"
@@ -25,7 +28,7 @@
         <ListView
             android:id="@+id/listview_myorder"
             android:layout_width="match_parent"
-            android:layout_height="346dp" />
+            android:layout_height="423dp" />
 
         <Button
             android:id="@+id/paynowbtn_myorder"
@@ -36,4 +39,15 @@
             android:text="Pay Now" />
 
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:menu="@layout/item_bottom_navigation" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
